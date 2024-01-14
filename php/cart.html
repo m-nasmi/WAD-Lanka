@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lanka Homes | Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const cartIcon = document.getElementById('bag');
+
+            const addToCartButtons = document.querySelectorAll('.add-to-cart');
+
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                alert('Product added to cart. Implement the cart logic here.');
+                });
+            });
+
+            cartIcon.addEventListener('click', function () {
+                window.location.href = 'cart.html';
+            });
+        });
+    </script>
+</head>
+<body> 
+    <header class="navigation" id="top">
+        <div id="logo">
+            <h1>Lanka Homes</h1>
+        </div>
+        <nav id="navbar">
+            <ul>
+                <li><i class="fa fa-times" aria-hidden="true" id="cross"></i></li>
+                <li><a href="index.html">home</a></li>
+                <li><a href="products.html">products</a></li>
+                <li><a href="services.html">services</a></li>
+                <li><a href="blog.html">blog</a></li>
+                <li><a href="contact.html">contact</a></li>
+                <li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true" id="bag"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="foot" id="con">
+        <footer>
+            <div class="footerdivs">
+                <h1>Lanka Homes</h1>
+            </div>
+            <div class="footerdivs">
+                <a href="products.html">products</a>
+                <a href="services.html">services</a>
+                <a href="blog.html">blog</a>
+                <a href="contact.html">contact us</a>
+            </div>
+            <div class="footerdivs">
+                <i class="fa fa-facebook"></i> 
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-twitter"></i>
+            </div>
+        </footer>
+        <div class="copyright">
+            <h2>@Copyright Lanka Homes 2022</h2>
+        </div>
+    </section>
+</body>
+</html>
